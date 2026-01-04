@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LumaLayer - Professional Filament Painting</title>
+    <style>
+        /* --- MODERN DARK THEME CSS --- */
+        :root {
+            --bg-color: #1a1a1a;
+            --card-bg: #2b2b2b;
+            --accent: #3B8ED0; /* CustomTkinter Blue */
+            --text-main: #ffffff;
+            --text-muted: #aaaaaa;
+        }
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        
+        /* Layout */
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        .hero { text-align: center; padding: 80px 20px; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; background: linear-gradient(45deg, #3B8ED0, #9b59b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.5rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 40px auto; }
+        
+        /* Buttons */
+        .btn-group { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .btn { padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: transform 0.2s; }
+        .btn:hover { transform: translateY(-2px); }
+        .btn-primary { background-color: var(--accent); color: white; border: 2px solid var(--accent); }
+        .btn-outline { background-color: transparent; color: white; border: 2px solid #555; }
+        
+        /* Features Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 60px 0; }
+        .card { background-color: var(--card-bg); padding: 30px; border-radius: 12px; border: 1px solid #333; }
+        .card h3 { color: var(--accent); margin-top: 0; }
+        
+        /* Comparison Table */
+        .comparison { width: 100%; border-collapse: collapse; margin: 50px 0; background: var(--card-bg); border-radius: 12px; overflow: hidden; }
+        .comparison th, .comparison td { padding: 15px; text-align: center; border-bottom: 1px solid #444; }
+        .comparison th { background-color: #333; font-size: 1.2rem; }
+        
+        /* LumaMeter Section */
+        .hardware-section { background: #111; padding: 60px 0; text-align: center; margin-top: 50px; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px; color: #666; font-size: 0.9rem; }
+        a { color: var(--accent); }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <!-- Put your logo.png in the folder and uncomment this line -->
+        <!-- <img src="logo.png" width="150" style="margin-bottom: 20px;"> -->
+        <h1>LumaLayer</h1>
+        <p>Turn images into physical reality. The professional, subscription-free filament painting engine.</p>
+        
+        <div class="btn-group">
+            <a href="https://github.com/YOUR_USERNAME/LumaLayer/releases" class="btn btn-outline">Download Free Edition</a>
+            <a href="https://ko-fi.com/createwithtech" class="btn btn-primary">Get LumaLayer Pro ($25)</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- FEATURES -->
+        <div class="grid">
+            <div class="card">
+                <h3>🖼️ 3D Relief Studio</h3>
+                <p>Convert photos into stunning backlit lithophanes or blendable filament paintings. Uses advanced Beer-Lambert transparency physics for accurate color prediction.</p>
+            </div>
+            <div class="card">
+                <h3>🧱 Flat Art Studio</h3>
+                <p>Create multi-color coasters, signs, and logos effortlessly. Turn SVGs or Images into solid, puzzle-piece STLs automatically.</p>
+            </div>
+            <div class="card">
+                <h3>🎨 AI Art Engine</h3>
+                <p>Apply Neural Style Transfer (Van Gogh, Mosaic, Sketch) directly to your photos before printing. No cloud required. (Pro Feature).</p>
+            </div>
+        </div>
+
+        <!-- LUMAMETER SECTION -->
+    </div>
+    
+    <div class="hardware-section">
+        <div class="container">
+            <h2>🔌 Introducing LumaMeter</h2>
+            <p>Stop guessing your TD values. Build your own scientific sensor.</p>
+            <p style="color: #aaa; max-width: 600px; margin: 20px auto;">
+                LumaLayer integrates wirelessly with the <strong>LumaMeter</strong>, an Open Hardware device you can build for under $15. 
+                Scan your filament, and the software updates instantly.
+            </p>
+            <br>
+            <a href="#" class="btn btn-outline">View Build Guide</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- COMPARISON -->
+        <h2 style="text-align: center; margin-top: 60px;">Choose Your Edition</h2>
+        <table class="comparison">
+            <tr>
+                <th>Feature</th>
+                <th>Standard (Free)</th>
+                <th>LumaLayer Pro ($25)</th>
+            </tr>
+            <tr>
+                <td>3D Relief Engine</td>
+                <td>✅</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <td>LumaMeter Integration</td>
+                <td>✅</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <td>Commercial Rights</td>
+                <td>✅</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <td><strong>Flat Art Studio</strong></td>
+                <td>❌</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <td><strong>AI Style Plugins</strong></td>
+                <td>❌</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <td><strong>Posterize / Denoise</strong></td>
+                <td>❌</td>
+                <td>✅</td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <p>Created by <strong>Ronen</strong> (Create with Tech). Built for the Community.</p>
+        <p><a href="https://youtube.com/@CreatewithTech">Watch on YouTube</a> | <a href="https://ko-fi.com/createwithtech">Support on Ko-Fi</a></p>
+    </footer>
+
+</body>
+</html>
