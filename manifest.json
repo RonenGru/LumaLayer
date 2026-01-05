@@ -6,9 +6,10 @@
     {
       "chipFamily": "ESP32",
       "parts": [
-        { "path": "lumameter_v2.bin", "offset": 0 }
+        { "path": "LumaMeter_v2.bin", "offset": 0 }
       ]
     }
   ]
 
 }
+
