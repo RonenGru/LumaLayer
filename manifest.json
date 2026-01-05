@@ -1,6 +1,6 @@
 {
   "name": "LumaMeter Firmware",
-  "version": "2.2",
+  "version": "2.1",
   "home_assistant_domain": "esphome",
   "builds": [
     {
@@ -10,4 +10,5 @@
       ]
     }
   ]
+
 }
