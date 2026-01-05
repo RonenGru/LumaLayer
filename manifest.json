@@ -1,0 +1,13 @@
+{
+  "name": "LumaMeter Firmware",
+  "version": "2.2",
+  "home_assistant_domain": "esphome",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "lumameter_v2.bin", "offset": 0 }
+      ]
+    }
+  ]
+}
