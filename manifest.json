@@ -6,10 +6,13 @@
     {
       "chipFamily": "ESP32",
       "parts": [
-        { "path": "LumaMeter_v2.bin", "offset": 0 }
+        { "path": "bootloader.bin", "offset": 4096 },
+        { "path": "partitions.bin", "offset": 32768 },
+        { "path": "LumaMeter_v2.bin", "offset": 65536 }
       ]
     }
   ]
 
 }
+
 
