@@ -32,6 +32,24 @@
             ⚠️ <strong>Chrome or Edge Required.</strong><br>
             Make sure no other software (like Cura or Arduino IDE) is using the USB port.
         </div>
+
+    <div style="background: #222; color: #eee; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #444; font-family: sans-serif;">
+            <h3 style="margin-top: 0; color: #fff;">🔌 Connection Help</h3>
+            <p style="font-size: 14px; line-height: 1.5;">
+                <strong>Not sure which Port to pick?</strong>
+                <br>
+                Most devices appear as <em>"USB Serial Device"</em> or <em>"CP210x"</em>.
+                <br><br>
+                <strong>The Foolproof Method:</strong><br>
+                1. <strong>Unplug</strong> your LumaMeter.<br>
+                2. Click 'Connect' and see what is listed. Then click Cancel.<br>
+                3. <strong>Plug in</strong> your LumaMeter.<br>
+                4. Click 'Connect' again. <strong>The new item that appeared is your LumaMeter!</strong>
+            </p>
+            <p style="font-size: 12px; color: #aaa; margin-bottom: 0;">
+                <em>Still nothing? You might need the <a href="https://www.wemos.cc/en/latest/ch340_driver.html" target="_blank" style="color: #4da6ff;">CH340 Drivers</a>.</em>
+            </p>
+        </div>
         
         <!-- THE MAGIC BUTTON -->
         <esp-web-install-button 
@@ -47,4 +65,5 @@
     </div>
 
 </body>
+
 </html>
