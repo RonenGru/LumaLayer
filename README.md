@@ -48,7 +48,7 @@ LumaLayer is a professional, free tool for creating 3D filament paintings, backl
 	*Focus: Workflow Automation & Compatibility*
 
 *   [ ] **Library Import / Migration:**
-    *   *Request:* Import CSV/JSON libraries from other tools (HueForge/3DFilamentProfiles).
+    *   *Request:* Import CSV/JSON libraries from other tools (3DFilamentProfiles).
     *   *Task:* Write a parser to convert external formats into `filament_library.json`.
 *   [ ] **Auto-Stack (From Guide):**
     *   *Request:* Button to automatically generate a 4-5 layer filament stack based on the "Guide" K-Means analysis.
