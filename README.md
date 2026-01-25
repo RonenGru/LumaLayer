@@ -44,19 +44,11 @@ LumaLayer is a professional, free tool for creating 3D filament paintings, backl
     *   *Task:* Upgrade from Torch (`.t7`) to ONNX (`.onnx`) support. Allows for modern custom style training on NVIDIA GPUs.
 *   [ ] **Mac/Linux Port:**
     *   *Task:* Investigate compiling with PyInstaller on non-Windows machines.
-	
-	*Focus: Workflow Automation & Compatibility*
-
-*   [ ] **Library Import / Migration:**
-    *   *Request:* Import CSV/JSON libraries from other tools (3DFilamentProfiles).
     *   *Task:* Write a parser to convert external formats into `filament_library.json`.
 *   [ ] **Auto-Stack (From Guide):**
     *   *Request:* Button to automatically generate a 4-5 layer filament stack based on the "Guide" K-Means analysis.
-*   [ ] **AI Engine Upgrade:**
-    *   *Task:* Upgrade from Torch (`.t7`) to ONNX (`.onnx`) support for modern style training.
 
 ---
-
 
 
 ## 🛠️ v1.0.2 Patch Notes (Jan 22, 2026)
