@@ -39,6 +39,8 @@ LumaLayer is a professional, free tool for creating 3D filament paintings, backl
     *   *Feature:* Users can "teach" the meter exotic filaments (Bronze, Gold, Silk) and save them to the permanent profile.
 *   [x] **Hybrid LumaMeter Sync:**
     *   *Fix:* Prevented LumaMeter from overwriting manual artistic color choices while still allowing Live TD physics updates.
+    [x] **Manual Profile Management:** Add a button to "Reset Calibration" or delete specific trained colors without editing JSON.
+*   [x] **Mask "Plastic" Preview:** Ensure the keychain loop is clearly visible in the UI by using a grey "plastic" filler for the mask areas.
 
 ---
 
