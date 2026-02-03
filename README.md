@@ -18,38 +18,52 @@ LumaLayer is a professional, free tool for creating 3D filament paintings, backl
 *   [x] **Magic Lift UX:**
     *   *Issue:* Turning off the "Lift" toggle disables the effect. Users want to hide the Green Mask but keep the 3D Lift active.
     *   *Task:* Separate "Show Mask" (Visual) from "Enable Lift" (Physics).
-	
-	### 🛠️ NEXT UPDATE (Target: v1.0.3 & Firmware v2.3)
-*Focus: Color Accuracy & UX Polish*
 
-*   [ ] **LumaMeter Firmware (v2.3):**
-    *   *Issue:* OLED reports "Green" for Yellow/Bronze filaments due to Cool White LED bias.
-    *   *Solution:* Implement **Automatic White Balance (AWB)** on startup (scan white target) and switch internal math to **HSV (Hue-Saturation-Value)** for reliable color detection.
-*   [ ] **Software Color Matching:**
-    *   *Issue:* App guesses generic names ("Grey") instead of using the user's saved library names ("Bronze").
-    *   *Solution:* Update logic to search `filament_library.json` for a close match *before* falling back to generic web colors.
-*   [ ] **UI Logic Fix (Zones Mode):**
-    *   *Issue:* TD Slider is disabled in "Zones" view.
-    *   *Solution:* Enable TD slider in all views to allow data entry without switching tabs.
+# 📝 LumaLayer Project Tracker (v1.1 Dev Update)
+
+### ✅ COMPLETED (Target: v1.1 - The Product Update)
+*Focus: Turning Art into Physical Products & Hardware Precision.*
+
+*   [x] **The Digital Cookie Cutter (Shaping Engine):**
+    *   *Feature:* STL Exporter now respects transparency and "clips" the mesh.
+    *   *Wall Builder:* Implemented a robust loop to generate vertical side-walls for cutouts.
+    *   *interactive UI:* Added sliders for Scale, Horizontal Position, and Vertical Position.
+    *   *Shape Library:* Built-in Circle, Oval, Square, Rounded Rect, Star, and Heart masks.
+*   [x] **Keychain Loop Generator:**
+    *   *Feature:* One-click checkbox to add a physical mounting loop to any shaped print.
+*   [x] **LumaMeter Calibration Wizard:**
+    *   *Issue:* Solved the "Cool White LED" color bias using software.
+    *   *Workflow:* Built a 5-point Wizard (White, Black, Red, Green, Blue) to create a custom user profile.
+    *   *Logic:* Implemented KNN (K-Nearest Neighbors) math to identify colors based on the user's specific sensor fingerprint.
+*   [x] **"Train This Color" Logic:**
+    *   *Feature:* Users can "teach" the meter exotic filaments (Bronze, Gold, Silk) and save them to the permanent profile.
+*   [x] **Hybrid LumaMeter Sync:**
+    *   *Fix:* Prevented LumaMeter from overwriting manual artistic color choices while still allowing Live TD physics updates.
 
 ---
 
-### 🚀 FEATURE ROADMAP (Target: v1.1)
-*Focus: New capabilities and workflow improvements.*
+### 🚨 IMMEDIATE POLISH (Next Session)
+*Focus: Finalizing v1.1 for release.*
+
+*   [ ] **Manual Profile Management:** Add a button to "Reset Calibration" or delete specific trained colors without editing JSON.
+*   [ ] **Mask "Plastic" Preview:** Ensure the keychain loop is clearly visible in the UI by using a grey "plastic" filler for the mask areas.
+*   [ ] **TD Slider Label Fix:** Ensure the TD value is visible in the library manager (Started).
+
+---
+
+### 🚀 FEATURE ROADMAP (v1.1 & Beyond)
+*Focus: Ecosystem expansion.*
 
 *   [ ] **Library Import:**
-    *   *Request:* Thierry asked to import HueForge/CSV filament libraries.
-    *   *Task:* Write a parser for standard CSV filament lists.
+    *   *Task:* Write a parser for standard CSV filament lists (HueForge/Spreadsheets).
 *   [ ] **AI Engine Upgrade:**
-    *   *Task:* Upgrade from Torch (`.t7`) to ONNX (`.onnx`) support. Allows for modern custom style training on NVIDIA GPUs.
+    *   *Task:* Transition from Torch (`.t7`) to ONNX (`.onnx`) for modern GPU support.
 *   [ ] **Mac/Linux Port:**
-    *   *Task:* Investigate compiling with PyInstaller on non-Windows machines.
-    *   *Task:* Write a parser to convert external formats into `filament_library.json`.
+    *   *Task:* Finalize Python cross-platform dependencies for a non-Windows release.
 *   [ ] **Auto-Stack (From Guide):**
-    *   *Request:* Button to automatically generate a 4-5 layer filament stack based on the "Guide" K-Means analysis.
+    *   *Task:* Automatically generate a 5-layer stack based on the "Guide" analysis.
 
----
-
+***
 
 ## 🛠️ v1.0.2 Patch Notes (Jan 22, 2026)
 
