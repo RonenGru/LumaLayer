@@ -19,6 +19,7 @@ LumaLayer is a professional, free tool for creating 3D filament paintings, backl
     *   *Issue:* Turning off the "Lift" toggle disables the effect. Users want to hide the Green Mask but keep the 3D Lift active.
     *   *Task:* Separate "Show Mask" (Visual) from "Enable Lift" (Physics).
 
+
 # 📝 LumaLayer Project Tracker (v1.1 Dev Update)
 
 ### ✅ COMPLETED (Target: v1.1 - The Product Update)
