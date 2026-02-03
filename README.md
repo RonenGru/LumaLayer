@@ -31,6 +31,7 @@ LumaLayer is a professional, free tool for creating 3D filament paintings, backl
     *   *Shape Library:* Built-in Circle, Oval, Square, Rounded Rect, Star, and Heart masks.
 *   [x] **Keychain Loop Generator:**
     *   *Feature:* One-click checkbox to add a physical mounting loop to any shaped print.
+    [x] **Mask "Plastic" Preview:** Ensured the keychain loop is clearly visible in the UI by using a grey "plastic" filler for the mask areas.
 *   [x] **LumaMeter Calibration Wizard:**
     *   *Issue:* Solved the "Cool White LED" color bias using software.
     *   *Workflow:* Built a 5-point Wizard (White, Black, Red, Green, Blue) to create a custom user profile.
@@ -39,8 +40,7 @@ LumaLayer is a professional, free tool for creating 3D filament paintings, backl
     *   *Feature:* Users can "teach" the meter exotic filaments (Bronze, Gold, Silk) and save them to the permanent profile.
 *   [x] **Hybrid LumaMeter Sync:**
     *   *Fix:* Prevented LumaMeter from overwriting manual artistic color choices while still allowing Live TD physics updates.
-    [x] **Manual Profile Management:** Add a button to "Reset Calibration" or delete specific trained colors without editing JSON.
-*   [x] **Mask "Plastic" Preview:** Ensure the keychain loop is clearly visible in the UI by using a grey "plastic" filler for the mask areas.
+*   [x] **TD Slider Label Fix:** Ensured the TD value is visible in the library manager.
 
 ---
 
@@ -48,8 +48,6 @@ LumaLayer is a professional, free tool for creating 3D filament paintings, backl
 *Focus: Finalizing v1.1 for release.*
 
 *   [ ] **Manual Profile Management:** Add a button to "Reset Calibration" or delete specific trained colors without editing JSON.
-*   [ ] **Mask "Plastic" Preview:** Ensure the keychain loop is clearly visible in the UI by using a grey "plastic" filler for the mask areas.
-*   [ ] **TD Slider Label Fix:** Ensure the TD value is visible in the library manager (Started).
 
 ---
 
