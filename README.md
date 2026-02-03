@@ -20,6 +20,8 @@ LumaLayer is a professional, free tool for creating 3D filament paintings, backl
     *   *Task:* Separate "Show Mask" (Visual) from "Enable Lift" (Physics).
 
 
+
+
 # 📝 LumaLayer Project Tracker (v1.1 Dev Update)
 
 ### ✅ COMPLETED (Target: v1.1 - The Product Update)
