@@ -1,6 +1,52 @@
 # LumaLayer
 LumaLayer is a professional, free tool for creating 3D filament paintings, backlit lithophanes, and flat pop-art from images.
 
+# 🚀 LumaLayer v1.1 — The "Shaping Update"
+
+LumaLayer v1.1 is a major evolutionary leap for the project. This update transforms the software from a 3D relief tool into a professional **Product Manufacturing Suite**, allowing users to go from a digital image to a retail-ready physical product (like keychains, badges, and coasters) in minutes.
+
+---
+
+## 🎨 The Digital Cookie Cutter (Shaping Engine)
+*Exclusive to LumaLayer Pro*
+
+The headline feature of v1.1 is the ability to physically "cut" your 3D prints into specific shapes. No more rectangular blocks—now your prints can take any form.
+
+*   **Interactive Shape Library:** Use the new dropdown menu to instantly clip your image into **Circles, Ovals, Stars, Hearts, Squares,** or **Rounded Rectangles**.
+*   **Precision Composing:** New sliders for **Mask Scale**, **Horizontal Position**, and **Vertical Position** allow you to frame your subject perfectly within the chosen shape.
+*   **Keychain Loop Generator:** A one-click physical mounting loop can be added to the top of any shape. This loop is mathematically integrated into the 3D mesh for maximum strength.
+*   **Procedural Raised Borders:** Add a solid physical rim around your shapes with adjustable **Border Width**. This gives your prints a clean, finished "merchandise" look.
+*   **Custom Mask Import:** Load any transparent **.PNG** file to use as a custom 3D stencil. If you can draw it, LumaLayer can print it.
+
+---
+
+## 🔬 LumaMeter 2.0 Integration
+We have moved the "intelligence" of the LumaMeter from the hardware firmware to the LumaLayer software, resulting in a massive increase in color accuracy.
+
+*   **5-Point Calibration Wizard:** A guided setup process that teaches LumaLayer the specific spectral fingerprint of your device's LED. Calibrates for White, Black, Red, Green, and Blue.
+*   **Smart Enrollment (Train This Color):** Users can now "Enroll" specific filament brands (e.g., "Esun Bronze"). The software takes a snapshot of the sensor data and links it to a custom visual color and TD value.
+*   **Profile Manager:** A dedicated window to manage your trained filament signatures. Delete old entries or reset your base calibration with one click.
+*   **Hybrid Sync:** The LumaMeter now updates physical **TD values** live while allowing you to "lock" manual artistic colors if the sensor's raw data doesn't match your creative vision.
+
+---
+
+## 👁️ High-Fidelity Simulation
+The simulation window has been rebuilt to provide an honest "What You See Is What You Get" (WYSIWYG) experience.
+
+*   **Realistic (Final) Mode:** A new rendering engine using **Exponential Beer-Lambert math**. It accurately simulates how light passes through specific TD values and reveals 0.08mm layer transitions.
+*   **Slicer-Sync Precision:** The simulation math is now perfectly aligned with the STL exporter. No more "Missing Layers" or height discrepancies.
+*   **Lighting & Contrast Sliders:** New **Brightness** and **Contrast** controls allow you to tune the on-screen preview to match your monitor's gamma or your intended physical display environment.
+*   **Subsurface Scattering:** Realistic mode now includes a "Softness" pass that mimics the way light naturally diffuses through real plastic.
+
+---
+
+## 🛠️ Performance & Stability
+*   **Slicer-Compatible Meshes:** Implemented vertex-snapping and "Despeckling" (Island removal) to eliminate "Floating Region" errors in Bambu Studio and OrcaSlicer.
+*   **Float-Point Precision:** Improved rounding logic ensures the physical STL height matches the LumaLayer Recipe exactly to the micron.
+*   **UI Polish:** Dynamic help labels now explain each simulation mode in real-time as you switch between them.
+
+---
+
 # 📝 LumaLayer Project Tracker
 
 ### 🚨 IMMEDIATE FIXES (Target: v1.0.2 Patch)
