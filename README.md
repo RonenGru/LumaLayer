@@ -1,7 +1,9 @@
 # LumaLayer
 LumaLayer is a professional, free tool for creating 3D filament paintings, backlit lithophanes, and flat pop-art from images.
 
-# 🚀 LumaLayer v1.1 — The "Shaping Update"
+# LumaLayer v1.1 (Coming Soon) 
+
+## 🚀 The "Shaping Update"
 
 LumaLayer v1.1 is a major evolutionary leap for the project. This update transforms the software from a 3D relief tool into a professional **Product Manufacturing Suite**, allowing users to go from a digital image to a retail-ready physical product (like keychains, badges, and coasters) in minutes.
 
