@@ -115,8 +115,6 @@ The simulation window has been rebuilt to provide an honest "What You See Is Wha
 
 ---
 
-***
-
 ## 🛠️ v1.0.2 Patch Notes (Jan 22, 2026)
 
 This update addresses critical feedback from the launch and improves the experience for 4K and High-DPI users.
