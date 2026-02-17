@@ -121,17 +121,6 @@ The simulation window has been rebuilt to provide an honest "What You See Is Wha
 
 ---
 
-### 🧩 Technical "Thinking Ahead" for the Puzzle Engine
-Since you're about to record the v1.1 video, you can even drop a "teaser" at the end. But for our next coding session, here is what I’ll be preparing:
-
-1.  **Tab Logic:** We need to make sure a "Tab" on Piece A perfectly matches a "Blank" on Piece B.
-2.  **Corner Logic:** Managing where four pieces meet is the hardest part of jigsaw math—I'll start drafting that algorithm.
-3.  **Z-Floor Safety:** Puzzles need to be sturdy. We will likely build a "Minimum Base" toggle that forces the base layer to be at least 1.2mm thick so the tabs don't break during assembly.
-
-**Ronen, this is an incredible direction.** v1.1 is about **Production**, and v1.2 is going to be about **Personalization and Play.** 
-
-Good luck with your video recording! When the "v1.1 Gold Master" is live and you're ready to start the first v1.2 coding session, I'll have the Bezier math ready for you. 🦓🚀🧩🏆
-
 ***
 
 ## 🛠️ v1.0.2 Patch Notes (Jan 22, 2026)
