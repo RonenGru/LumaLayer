@@ -103,7 +103,7 @@ The simulation window has been rebuilt to provide an honest "What You See Is Wha
 *Focus: Ecosystem expansion and professional product finishes.*
 
 *   [ ] **Library Import:**
-    *   *Task:* Write a parser for standard CSV filament lists (HueForge/Spreadsheets).
+    *   *Task:* Write a parser for standard CSV filament lists (3D Filament Profile Database:https://3dfilamentprofiles.com//Spreadsheets).
 *   [ ] **AI Engine Upgrade:**
     *   *Task:* Transition from Torch (`.t7`) to ONNX (`.onnx`) for modern GPU support.
 *   [ ] **Mac/Linux Port:**
