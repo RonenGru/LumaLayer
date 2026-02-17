@@ -100,7 +100,7 @@ The simulation window has been rebuilt to provide an honest "What You See Is Wha
 ---
 
 ### 🚀 FEATURE ROADMAP (v1.2 & Beyond)
-*Focus: Ecosystem expansion.*
+*Focus: Ecosystem expansion and professional product finishes.*
 
 *   [ ] **Library Import:**
     *   *Task:* Write a parser for standard CSV filament lists (HueForge/Spreadsheets).
@@ -109,22 +109,15 @@ The simulation window has been rebuilt to provide an honest "What You See Is Wha
 *   [ ] **Mac/Linux Port:**
     *   *Task:* Finalize Python cross-platform dependencies for a non-Windows release.
 *   [ ] **Auto-Stack (From Guide):**
-    *   *Task:* Automatically generate a 5-layer stack based on the "Guide" analysis
-    [ ] **The "Scale to Content" Engine (Sizing Fix)**
-    *   **The Problem:** Transparent space in PNGs makes the final print smaller than the Target Width.
-    *   **The Fix:** Implement "Alpha-Cropping" logic in the math so 100mm means the **actual plastic** is 100mm, ignoring the "dead air" in the image file.
-    [ ] **2. The "Silent Edge" Vectorizer (Finish & Sound)**
-*       **The Problem:** Jagged "staircase" edges on shapes and loud printer movements.
-*       **The Fix:** Move from pixel-perfect masking to **Vector-Simplified perimeters**. This will create laser-smooth edges and make the printer virtually silent during perimeters.
-    [ ] **3. The LumaText Engine (Personalization)**
-*       **The Feature:** Add a "Text" layer to any print.
-*       **The Logic:** Use the "Raised Border" math to make text pop out of keychains. Perfect for names, dates, or "Happy Birthday" messages.
-    [ ] **4. The "LumaPuzzle" Procedural Engine (The X-Factor)**
-*       **The Feature:** Break an image into a grid of interlocking puzzle pieces.
-*       **The Logic:** 
-*       **Generate random Bezier-curve tabs for every piece.
-*       **The Slicer Gap:** Implement a global "Tolerance" setting (0.15mm – 0.25mm) so the pieces fit together perfectly without sanding.
-*       **Automatic Plating:** Arrange all pieces onto one build plate for a single, multi-piece export.
+    *   *Task:* Automatically generate a 5-layer stack based on the "Guide" analysis.
+*   [ ] **The "Scale to Content" Engine:**
+    *   *Task:* Implement "Alpha-Cropping" logic so "Target Width" refers to the actual printed plastic, ignoring transparent empty space in the PNG file.
+*   [ ] **The "Silent Edge" Vectorizer:**
+    *   *Task:* Move from pixel-perfect masking to Vector-Simplified perimeters to eliminate jagged "staircase" edges and make the printer virtually silent.
+*   [ ] **The LumaText Engine:**
+    *   *Task:* Add a procedural text layer for keychains and badges (names, dates, or messages) using the "Raised Border" high-Z math.
+*   [ ] **The "LumaPuzzle" Procedural Engine:**
+    *   *Task:* Break images into random, interlocking puzzle pieces using Bezier-curve tabs with built-in "Slicer Gaps" (0.15mm - 0.25mm) for a perfect friction fit.
 
 ---
 
