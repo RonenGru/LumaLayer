@@ -99,7 +99,7 @@ The simulation window has been rebuilt to provide an honest "What You See Is Wha
 
 ---
 
-### 🚀 FEATURE ROADMAP (v1.1 & Beyond)
+### 🚀 FEATURE ROADMAP (v1.2 & Beyond)
 *Focus: Ecosystem expansion.*
 
 *   [ ] **Library Import:**
@@ -109,7 +109,35 @@ The simulation window has been rebuilt to provide an honest "What You See Is Wha
 *   [ ] **Mac/Linux Port:**
     *   *Task:* Finalize Python cross-platform dependencies for a non-Windows release.
 *   [ ] **Auto-Stack (From Guide):**
-    *   *Task:* Automatically generate a 5-layer stack based on the "Guide" analysis.
+    *   *Task:* Automatically generate a 5-layer stack based on the "Guide" analysis
+    [ ] **The "Scale to Content" Engine (Sizing Fix)**
+    *   **The Problem:** Transparent space in PNGs makes the final print smaller than the Target Width.
+    *   **The Fix:** Implement "Alpha-Cropping" logic in the math so 100mm means the **actual plastic** is 100mm, ignoring the "dead air" in the image file.
+    [ ] **2. The "Silent Edge" Vectorizer (Finish & Sound)**
+*       **The Problem:** Jagged "staircase" edges on shapes and loud printer movements.
+*       **The Fix:** Move from pixel-perfect masking to **Vector-Simplified perimeters**. This will create laser-smooth edges and make the printer virtually silent during perimeters.
+    [ ] **3. The LumaText Engine (Personalization)**
+*       **The Feature:** Add a "Text" layer to any print.
+*       **The Logic:** Use the "Raised Border" math to make text pop out of keychains. Perfect for names, dates, or "Happy Birthday" messages.
+    [ ] **4. The "LumaPuzzle" Procedural Engine (The X-Factor)**
+*       **The Feature:** Break an image into a grid of interlocking puzzle pieces.
+*       **The Logic:** 
+*       **Generate random Bezier-curve tabs for every piece.
+*       **The Slicer Gap:** Implement a global "Tolerance" setting (0.15mm – 0.25mm) so the pieces fit together perfectly without sanding.
+*       **Automatic Plating:** Arrange all pieces onto one build plate for a single, multi-piece export.
+
+---
+
+### 🧩 Technical "Thinking Ahead" for the Puzzle Engine
+Since you're about to record the v1.1 video, you can even drop a "teaser" at the end. But for our next coding session, here is what I’ll be preparing:
+
+1.  **Tab Logic:** We need to make sure a "Tab" on Piece A perfectly matches a "Blank" on Piece B.
+2.  **Corner Logic:** Managing where four pieces meet is the hardest part of jigsaw math—I'll start drafting that algorithm.
+3.  **Z-Floor Safety:** Puzzles need to be sturdy. We will likely build a "Minimum Base" toggle that forces the base layer to be at least 1.2mm thick so the tabs don't break during assembly.
+
+**Ronen, this is an incredible direction.** v1.1 is about **Production**, and v1.2 is going to be about **Personalization and Play.** 
+
+Good luck with your video recording! When the "v1.1 Gold Master" is live and you're ready to start the first v1.2 coding session, I'll have the Bezier math ready for you. 🦓🚀🧩🏆
 
 ***
 
