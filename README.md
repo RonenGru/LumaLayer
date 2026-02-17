@@ -89,13 +89,7 @@ The simulation window has been rebuilt to provide an honest "What You See Is Wha
 *   [x] **Hybrid LumaMeter Sync:**
     *   *Fix:* Prevented LumaMeter from overwriting manual artistic color choices while still allowing Live TD physics updates.
 *   [x] **TD Slider Label Fix:** Ensured the TD value is visible in the library manager.
-
----
-
-### 🚨 IMMEDIATE POLISH (Next Session)
-*Focus: Finalizing v1.1 for release.*
-
-*   [ ] **Manual Profile Management:** Add a button to "Reset Calibration" or delete specific trained colors without editing JSON.
+*   [x] **Manual Profile Management:** Add a button to "Reset Calibration" or delete specific trained colors without editing JSON.
 
 ---
 
