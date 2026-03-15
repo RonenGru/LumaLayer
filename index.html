@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LumaLayer - Professional Filament Painting</title>
+    <title>LumaLayer - Professional Filament Painting & Merchandise Factory</title>
     <link rel="icon" type="image/x-icon" href="logo.ico">
     <style>
         /* --- MODERN DARK THEME CSS --- */
@@ -11,6 +11,7 @@
             --bg-color: #1a1a1a;
             --card-bg: #2b2b2b;
             --accent: #3B8ED0; /* CustomTkinter Blue */
+            --pro-gold: #D4AF37;
             --text-main: #ffffff;
             --text-muted: #aaaaaa;
         }
@@ -19,20 +20,22 @@
         /* Layout */
         .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
         .hero { text-align: center; padding: 80px 20px; }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; margin-top: 0; background: linear-gradient(45deg, #3B8ED0, #9b59b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero p { font-size: 1.5rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 40px auto; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; margin-top: 0; background: linear-gradient(45deg, #3B8ED0, #27AE60); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.5rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 40px auto; }
         
         /* Buttons */
         .btn-group { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
         .btn { padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: transform 0.2s; }
         .btn:hover { transform: translateY(-2px); }
         .btn-primary { background-color: var(--accent); color: white; border: 2px solid var(--accent); }
+        .btn-pro { background-color: #1e1e1e; color: var(--pro-gold); border: 2px solid var(--pro-gold); }
         .btn-outline { background-color: transparent; color: white; border: 2px solid #555; }
         
         /* Features Grid */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 60px 0; }
         .card { background-color: var(--card-bg); padding: 30px; border-radius: 12px; border: 1px solid #333; }
         .card h3 { color: var(--accent); margin-top: 0; }
+        .card .pro-tag { color: var(--pro-gold); font-size: 0.8rem; font-weight: bold; text-transform: uppercase; }
         
         /* Comparison Table */
         .comparison { width: 100%; border-collapse: collapse; margin: 50px 0; background: var(--card-bg); border-radius: 12px; overflow: hidden; }
@@ -51,20 +54,19 @@
 
     <!-- HERO SECTION -->
     <div class="hero">
-        <!-- Put your logo.png in the folder and uncomment this line -->
-        <img src="logo.png" width="150" style="margin-bottom: 20px;">
-        <h1>LumaLayer</h1>
-        <p>Turn images into physical reality. The professional, subscription-free filament painting engine.</p>
+        <img src="logo.png" width="120" style="margin-bottom: 20px;">
+        <h1>LumaLayer v1.2</h1>
+        <p>Go from photo to finished product. The world's first complete 3D filament painting and merchandise factory.</p>
 
         <!-- Clickable Software Screenshot -->
         <a href="images/LumaLayer_Pro_Interface.png" target="_blank">
             <img src="images/LumaLayer_Pro_Interface.png" 
-                 style="width: 80%; max-width: 800px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); margin: 30px 0;">
+                 style="width: 85%; max-width: 900px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.6); margin: 30px 0;">
         </a>
         
         <div class="btn-group">
             <a href="https://ko-fi.com/s/c2c4ea9acb" class="btn btn-outline">Download Free Edition</a>
-            <a href="https://ko-fi.com/s/a22c9e204b" class="btn btn-primary">Get LumaLayer Pro ($25)</a>
+            <a href="https://ko-fi.com/s/a22c9e204b" class="btn btn-pro">Get LumaLayer Pro</a>
         </div>
     </div>
 
@@ -72,36 +74,31 @@
         <!-- FEATURES -->
         <div class="grid">
             <div class="card">
-                <h3>🖼️ 3D Relief Studio</h3>
-                <p>Create stunning multi-color filament paintings OR traditional backlit lithophanes. Uses advanced Beer-Lambert transparency physics for accurate color prediction and layer blending.</p>
+                <h3>🖼️ Relief Studio</h3>
+                <p>Convert any photo into a stunning multi-color relief painting. Uses advanced physics to predict exactly how colors blend based on your filament's real transmissivity.</p>
             </div>
             <div class="card">
-                <h3>🧱 Flat Art Studio</h3>
-                <p>Create multi-color coasters, signs, and logos effortlessly. Turn SVGs or Images into multi-part STL assemblies for perfect color printing.</p>
+                <h3>🧩 Puzzle Factory <span class="pro-tag">(PRO)</span></h3>
+                <p>Turn your art into fully interlocking 3D Jigsaw Puzzles. Perfect for personalized gifts. Includes custom-fitted **Assembly Mats** and **LumaBox** packaging generation.</p>
             </div>
             <div class="card">
-                <h3>🎨 AI Art Engine</h3>
-                <p>Apply Neural Style Transfer (Van Gogh, Mosaic, Sketch) directly to your photos before printing. No cloud required. (Pro Feature).</p>
+                <h3>🎨 AI Style Engine <span class="pro-tag">(PRO)</span></h3>
+                <p>Apply artistic filters like Mosaic, Starry Night, or The Wave directly inside the app. Transform noisy photos into printable masterpieces with one click.</p>
             </div>
         </div>
-
-        <!-- LUMAMETER SECTION -->
     </div>
     
     <div class="hardware-section">
         <div class="container">
-            <h2>🔌 Introducing LumaMeter</h2>
-            <!-- NEW: Clickable Device Photo -->
-            <a href="images/Cropped_LumaMeter.jpg" target="_blank">
-                <img src="images/Cropped_LumaMeter.jpg" style="width: 300px; border-radius: 10px; margin: 20px;">
-            </a>
-            <p>Stop guessing your TD values. Build your own scientific sensor.</p>
-            <p style="color: #aaa; max-width: 600px; margin: 20px auto;">
-                LumaLayer integrates wirelessly with the <strong>LumaMeter</strong>, an Open Hardware device you can build for under $30. 
-                Scan your filament, and the software updates instantly.
-            </p>
-            <br>
-            <a href="https://github.com/RonenGru/LumaLayer/wiki" class="btn btn-outline" target="_blank">View Build Guide</a>
+            <h2>🔌 LumaMeter v3.0 WiFi Link</h2>
+            <p>The TD guessing game is officially over.</p>
+            <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 40px; margin-top: 30px;">
+                <img src="images/Cropped_LumaMeter.jpg" style="width: 250px; border-radius: 10px;">
+                <div style="text-align: left; max-width: 450px;">
+                    <p style="color: #ccc;">Link your <strong>LumaMeter</strong> wirelessly to LumaLayer Pro. Slide a filament into the sensor, and the TD values and RGB colors update in the app in real-time.</p>
+                    <a href="flash.html" style="color: #27AE60; text-decoration: none; font-weight: bold;">Flash LumaMeter v3.0 Online →</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -112,35 +109,40 @@
             <tr>
                 <th>Feature</th>
                 <th>Standard (Free)</th>
-                <th>LumaLayer Pro ($25)</th>
+                <th>LumaLayer Pro</th>
             </tr>
             <tr>
-                <td>3D Relief Engine</td>
-                <td>✅</td>
-                <td>✅</td>
-            </tr>
-            <tr>
-                <td>LumaMeter Integration</td>
+                <td>3D Relief / Art Engine</td>
                 <td>✅</td>
                 <td>✅</td>
             </tr>
             <tr>
-                <td>Commercial Rights</td>
+                <td>LumaMeter WiFi Link</td>
                 <td>✅</td>
                 <td>✅</td>
             </tr>
             <tr>
-                <td><strong>Flat Art Studio</strong></td>
+                <td>Commercial Use Rights</td>
+                <td>✅</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <td><strong>Jigsaw Puzzle Generator</strong></td>
                 <td>❌</td>
                 <td>✅</td>
             </tr>
             <tr>
-                <td><strong>AI Style Plugins</strong></td>
+                <td><strong>Assembly Mat & LumaBox Tray</strong></td>
                 <td>❌</td>
                 <td>✅</td>
             </tr>
             <tr>
-                <td><strong>Posterize / Denoise</strong></td>
+                <td><strong>AI Style Transfers</strong></td>
+                <td>❌</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <td><strong>Flat Art Studio / Vector Mode</strong></td>
                 <td>❌</td>
                 <td>✅</td>
             </tr>
@@ -149,11 +151,10 @@
 
     <footer>
         <p>Created by <strong>Ronen</strong> (Create with Tech). Built for the Community.</p>
-        <p><a href="https://youtube.com/@CreatewithTech">Watch on YouTube</a> | <a href="https://ko-fi.com/createwithtech">Support on Ko-Fi</a></p>
+        <p><a href="https://youtube.com/@CreatewithTech">Watch Tutorial Videos</a> | <a href="https://github.com/RonenGru/LumaLayer/wiki">User Manual (Wiki)</a></p>
     </footer>
 
 </body>
-
 </html>
 
 
