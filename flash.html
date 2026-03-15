@@ -14,15 +14,13 @@
         
         .warning-box { background: #2a2200; border-left: 4px solid #ffcc00; color: #ffcc00; padding: 15px; border-radius: 4px; font-size: 0.85em; margin-bottom: 20px; text-align: left; }
         
-        /* Connection Help Styling */
+        /* Help Box Styling */
         .help-box { background: #222; color: #eee; padding: 20px; border-radius: 8px; margin-bottom: 25px; border: 1px solid #444; text-align: left; font-family: sans-serif; }
-        .help-box h3 { margin-top: 0; color: #fff; font-size: 1.1em; }
+        .help-box h3 { margin-top: 0; color: #fff; font-size: 1.1em; display: flex; align-items: center; }
         .help-box p { font-size: 14px; line-height: 1.5; color: #ccc; }
-        .help-box strong { color: #fff; }
         
         .version-card { background: #252525; border: 1px solid #333; padding: 25px; border-radius: 12px; margin-bottom: 20px; text-align: left; position: relative; }
         .version-card.recommended { border-color: #27AE60; background: #1a231e; }
-        
         .badge { background: #27AE60; color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: bold; position: absolute; top: 20px; right: 20px; }
         
         h2 { margin-top: 0; color: #fff; font-size: 1.3em; margin-bottom: 10px; }
@@ -38,7 +36,6 @@
         
         .footer-note { color: #666; font-size: 0.85em; margin-top: 40px; line-height: 1.6; }
         a { color: #3B8ED0; text-decoration: none; }
-        a:hover { text-decoration: underline; }
     </style>
     <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
 </head>
@@ -50,37 +47,26 @@
         
         <div class="warning-box">
             ⚠️ <strong>Chrome or Edge Required.</strong><br>
-            Ensure your ESP32 DevKit V1 is connected via USB and no other software (Cura, LumaLayer, Arduino IDE) is using the port.
+            Ensure your LumaMeter is connected via USB and no other software (LumaLayer, Cura, etc.) is using the port.
         </div>
 
-        <!-- INSTRUCTIONS BOX -->
+        <!-- USB CONNECTION HELP -->
         <div class="help-box">
-            <h3>🔌 Connection Help</h3>
-            <p>
-                <strong>Not sure which Port to pick?</strong><br>
-                Most devices appear as <em>"USB Serial Device"</em> or <em>"CP210x"</em>.
-            </p>
-            <p>
-                <strong>The Foolproof Method:</strong><br>
-                1. <strong>Unplug</strong> your LumaMeter.<br>
-                2. Click an 'Install' button below and see what is listed. Then click Cancel.<br>
-                3. <strong>Plug in</strong> your LumaMeter.<br>
-                4. Click 'Install' again. <strong>The new item that appeared is your LumaMeter!</strong>
-            </p>
-            <p style="font-size: 12px; color: #888; margin-bottom: 0;">
-                <em>Still nothing? You might need the <a href="https://www.wemos.cc/en/latest/ch340_driver.html" target="_blank" style="color: #4da6ff;">CH340 Drivers</a>.</em>
-            </p>
+            <h3>🔌 USB Connection Help</h3>
+            <p><strong>Unsure which port to pick?</strong><br>
+            1. Unplug LumaMeter. Click Install and see the list.<br>
+            2. Plug LumaMeter in. Click Install again. <strong>The new item is your LumaMeter!</strong></p>
         </div>
 
         <!-- VERSION 3.0 (RECOMMENDED) -->
         <div class="version-card recommended">
             <div class="badge">RECOMMENDED</div>
             <h2>v3.0 - High Precision Edition (WiFi)</h2>
-            <p class="desc">Advanced calibration logic by <strong>Thierry</strong>. Features high-resolution sampling for rock-solid TD stability.</p>
+            <p class="desc">Advanced calibration by <strong>Thierry</strong>. Features high-res sampling for rock-solid TD measurements.</p>
             <ul>
-                <li>300ms integration time (6x more accurate)</li>
-                <li>Discrete workflow: Measures once per insertion</li>
-                <li>Advanced Color Normalization</li>
+                <li>300ms integration time (Maximum Accuracy)</li>
+                <li>Discrete workflow (Measure once per insertion)</li>
+                <li>Smart Color Normalization</li>
             </ul>
             
             <esp-web-install-button manifest="manifest.json">
@@ -91,11 +77,11 @@
         <!-- VERSION 2.1 (LEGACY) -->
         <div class="version-card">
             <h2>v2.1 - Standard Edition (WiFi)</h2>
-            <p class="desc">The original wireless firmware. Choose this if you prefer a real-time continuous stream of data from the device.</p>
+            <p class="desc">Original streaming firmware. Choose this if you prefer a continuous live-stream of data.</p>
             <ul>
                 <li>Continuous real-time data streaming</li>
                 <li>Fast 50ms sampling rate</li>
-                <li>Compatible with all v1.x/v2.x hardware</li>
+                <li>Proven stable for v1.x/v2.x hardware</li>
             </ul>
             
             <esp-web-install-button manifest="manifest_v2.json">
@@ -103,14 +89,23 @@
             </esp-web-install-button>
         </div>
 
+        <!-- WIFI SETUP HELP (THE MOBILE-FIRST FIX) -->
+        <div class="help-box" style="border-color: #27AE60; background: #1a1a1a;">
+            <h3 style="color: #27AE60;">📱 Step 2: WiFi Configuration</h3>
+            <p>After installation, the device will reboot. For the easiest setup, <strong>use your Smartphone:</strong></p>
+            <ol style="color: #ccc; font-size: 13px; text-align: left; line-height: 1.6;">
+                <li>On your phone, scan for WiFi and connect to <strong>"LumaMeter_Setup"</strong>.</li>
+                <li>Your phone should automatically show a "Sign in to network" notification. <strong>Tap it.</strong></li>
+                <li>If it doesn't open, open your phone's browser and go to <strong>192.168.4.1</strong></li>
+                <li>Select your home WiFi, enter your password, and hit <strong>Save</strong>.</li>
+            </ol>
+            <p style="font-size: 12px; color: #888; margin-top: 10px;"><em>Windows users: Disable "Connect Automatically" if your PC refuses to stay connected to the setup hotspot.</em></p>
+        </div>
+
         <div class="footer-note">
-            After installation, the device will reboot.<br>
-            Connect your phone/PC to the <strong>"LumaMeter_Setup"</strong> WiFi hotspot to configure it.
-            <br><br>
             <a href="index.html">← Back to LumaLayer Home</a>
         </div>
     </div>
 
 </body>
-</html>
 </html>
