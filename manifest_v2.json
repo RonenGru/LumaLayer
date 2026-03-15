@@ -1,0 +1,14 @@
+{
+  "name": "LumaMeter Standard (Streamer)",
+  "version": "2.1",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "bootloader_v2.bin", "offset": 4096 },
+        { "path": "partitions_v2.bin", "offset": 32768 },
+        { "path": "LumaMeter_v2.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
