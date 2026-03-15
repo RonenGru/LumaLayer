@@ -3,67 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LumaMeter Installer</title>
+    <title>LumaMeter Firmware Installer</title>
     <link rel="icon" type="image/x-icon" href="logo.ico">
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background-color: #1a1a1a; color: white; text-align: center; padding: 50px; }
-        .container { max-width: 600px; margin: 0 auto; background: #2b2b2b; padding: 40px; border-radius: 12px; border: 1px solid #444; }
-        h1 { color: #3B8ED0; margin-top: 0; }
-        p { color: #aaa; margin-bottom: 30px; line-height: 1.5; }
-        .warning { background: #332b00; border: 1px solid #665500; color: #ffcc00; padding: 10px; border-radius: 6px; font-size: 0.9em; margin-bottom: 20px; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #121212; color: white; text-align: center; padding: 20px; }
+        .container { max-width: 650px; margin: 0 auto; background: #1e1e1e; padding: 30px; border-radius: 16px; border: 1px solid #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         
-        esp-web-install-button {
-            --esp-tools-button-color: #3B8ED0;
-            --esp-tools-button-text-color: #ffffff;
-            --esp-tools-button-border-radius: 8px;
-            font-size: 1.2em;
-        }
+        h1 { color: #3B8ED0; margin-bottom: 5px; font-size: 2.2em; }
+        .subtitle { color: #666; margin-bottom: 25px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.8em; font-weight: bold; }
+        
+        .warning-box { background: #2a2200; border-left: 4px solid #ffcc00; color: #ffcc00; padding: 15px; border-radius: 4px; font-size: 0.85em; margin-bottom: 20px; text-align: left; }
+        
+        /* Connection Help Styling */
+        .help-box { background: #222; color: #eee; padding: 20px; border-radius: 8px; margin-bottom: 25px; border: 1px solid #444; text-align: left; font-family: sans-serif; }
+        .help-box h3 { margin-top: 0; color: #fff; font-size: 1.1em; }
+        .help-box p { font-size: 14px; line-height: 1.5; color: #ccc; }
+        .help-box strong { color: #fff; }
+        
+        .version-card { background: #252525; border: 1px solid #333; padding: 25px; border-radius: 12px; margin-bottom: 20px; text-align: left; position: relative; }
+        .version-card.recommended { border-color: #27AE60; background: #1a231e; }
+        
+        .badge { background: #27AE60; color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: bold; position: absolute; top: 20px; right: 20px; }
+        
+        h2 { margin-top: 0; color: #fff; font-size: 1.3em; margin-bottom: 10px; }
+        p.desc { color: #aaa; line-height: 1.5; font-size: 0.9em; margin-bottom: 15px; }
+        
+        ul { list-style: none; padding: 0; margin-bottom: 20px; }
+        li { color: #888; font-size: 0.85em; margin-bottom: 5px; display: flex; align-items: center; }
+        li::before { content: "•"; color: #3B8ED0; font-weight: bold; width: 15px; display: inline-block; }
+        .recommended li::before { color: #27AE60; }
+        
+        esp-web-install-button { --esp-tools-button-color: #3B8ED0; }
+        .recommended esp-web-install-button { --esp-tools-button-color: #27AE60; }
+        
+        .footer-note { color: #666; font-size: 0.85em; margin-top: 40px; line-height: 1.6; }
+        a { color: #3B8ED0; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
-    <!-- Import ESP Web Tools -->
     <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
 </head>
 <body>
 
     <div class="container">
-        <h1>LumaMeter Firmware</h1>
-        <p>Connect your ESP32 DevKit V1 via USB to this computer.</p>
+        <h1>LumaMeter</h1>
+        <div class="subtitle">Official Firmware Installer</div>
         
-        <div class="warning">
+        <div class="warning-box">
             ⚠️ <strong>Chrome or Edge Required.</strong><br>
-            Make sure no other software (like Cura or Arduino IDE) is using the USB port.
+            Ensure your ESP32 DevKit V1 is connected via USB and no other software (Cura, LumaLayer, Arduino IDE) is using the port.
         </div>
 
-    <div style="background: #222; color: #eee; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #444; font-family: sans-serif;">
-            <h3 style="margin-top: 0; color: #fff;">🔌 Connection Help</h3>
-            <p style="font-size: 14px; line-height: 1.5;">
-                <strong>Not sure which Port to pick?</strong>
-                <br>
+        <!-- INSTRUCTIONS BOX -->
+        <div class="help-box">
+            <h3>🔌 Connection Help</h3>
+            <p>
+                <strong>Not sure which Port to pick?</strong><br>
                 Most devices appear as <em>"USB Serial Device"</em> or <em>"CP210x"</em>.
-                <br><br>
+            </p>
+            <p>
                 <strong>The Foolproof Method:</strong><br>
                 1. <strong>Unplug</strong> your LumaMeter.<br>
-                2. Click 'Connect' and see what is listed. Then click Cancel.<br>
+                2. Click an 'Install' button below and see what is listed. Then click Cancel.<br>
                 3. <strong>Plug in</strong> your LumaMeter.<br>
-                4. Click 'Connect' again. <strong>The new item that appeared is your LumaMeter!</strong>
+                4. Click 'Install' again. <strong>The new item that appeared is your LumaMeter!</strong>
             </p>
-            <p style="font-size: 12px; color: #aaa; margin-bottom: 0;">
+            <p style="font-size: 12px; color: #888; margin-bottom: 0;">
                 <em>Still nothing? You might need the <a href="https://www.wemos.cc/en/latest/ch340_driver.html" target="_blank" style="color: #4da6ff;">CH340 Drivers</a>.</em>
             </p>
         </div>
-        
-        <!-- THE MAGIC BUTTON -->
-        <esp-web-install-button 
-            manifest="manifest.json"
-        >
-            <button slot="activate">Connect & Install</button>
-        </esp-web-install-button>
-        
-        <p style="margin-top: 40px; font-size: 0.9em; color: #666;">
+
+        <!-- VERSION 3.0 (RECOMMENDED) -->
+        <div class="version-card recommended">
+            <div class="badge">RECOMMENDED</div>
+            <h2>v3.0 - High Precision Edition (WiFi)</h2>
+            <p class="desc">Advanced calibration logic by <strong>Thierry</strong>. Features high-resolution sampling for rock-solid TD stability.</p>
+            <ul>
+                <li>300ms integration time (6x more accurate)</li>
+                <li>Discrete workflow: Measures once per insertion</li>
+                <li>Advanced Color Normalization</li>
+            </ul>
+            
+            <esp-web-install-button manifest="manifest.json">
+                <button slot="activate" style="padding: 12px 24px; border-radius: 6px; border: none; background: #27AE60; color: white; cursor: pointer; font-weight: bold;">Install v3.0 (Precision)</button>
+            </esp-web-install-button>
+        </div>
+
+        <!-- VERSION 2.1 (LEGACY) -->
+        <div class="version-card">
+            <h2>v2.1 - Standard Edition (WiFi)</h2>
+            <p class="desc">The original wireless firmware. Choose this if you prefer a real-time continuous stream of data from the device.</p>
+            <ul>
+                <li>Continuous real-time data streaming</li>
+                <li>Fast 50ms sampling rate</li>
+                <li>Compatible with all v1.x/v2.x hardware</li>
+            </ul>
+            
+            <esp-web-install-button manifest="manifest_v2.json">
+                <button slot="activate" style="padding: 12px 24px; border-radius: 6px; border: none; background: #444; color: white; cursor: pointer; font-weight: bold;">Install v2.1 (Standard)</button>
+            </esp-web-install-button>
+        </div>
+
+        <div class="footer-note">
             After installation, the device will reboot.<br>
-            Connect to the "LumaMeter_Setup" WiFi hotspot to configure it.
-        </p>
+            Connect your phone/PC to the <strong>"LumaMeter_Setup"</strong> WiFi hotspot to configure it.
+            <br><br>
+            <a href="index.html">← Back to LumaLayer Home</a>
+        </div>
     </div>
 
 </body>
-
+</html>
 </html>
