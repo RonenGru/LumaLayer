@@ -1,134 +1,89 @@
-# LumaLayer
-LumaLayer is a professional, free tool for creating 3D filament paintings, backlit lithophanes, and flat pop-art from images.
+# LumaLayer: The Filament Painting & Merchandise Factory
 
-# LumaLayer v1.1 (Coming Soon) 
+LumaLayer is a professional physics-based engine for creating 3D filament paintings, backlit lithophanes, and retail-ready physical products from any image.
 
-## 🚀 The "Shaping Update"
+---
 
-LumaLayer v1.1 is a major evolutionary leap for the project. This update transforms the software from a 3D relief tool into a professional **Product Manufacturing Suite**, allowing users to go from a digital image to a retail-ready physical product (like keychains, badges, and coasters) in minutes.
+## 🚀 NEW: LumaLayer v1.2 — The "Gold Master" Release
+The **v1.2 "Merchandise Factory"** update transforms LumaLayer from an art tool into a full-scale product design studio. Create interlocking products with zero CAD experience.
+
+### 🧩 The Jigsaw Factory
+*Exclusive to LumaLayer Pro*
+*   **Procedural Puzzles:** Instantly convert any image into a real, interlocking jigsaw puzzle.
+*   **Adjustable "Snap-Fit":** Built-in tolerance sliders (0.15mm - 0.30mm) ensure your puzzle pieces fit perfectly regardless of your printer's calibration.
+*   **Custom Grid Sizes:** Generate anything from a simple 4-piece kid's puzzle to a complex 100-piece challenge.
+
+### 📦 LumaBox Generator
+*Exclusive to LumaLayer Pro*
+*   **Automated Packaging:** Don't just print art; create a product. Automatically generate a custom-fitted, sliding-lid gift box for your puzzles or paintings.
+*   **Mechanical Precision:** Uses 3-sided symmetrical rail math for a smooth, professional slide-feel.
+
+### 🔠 LumaText Engine & Posterization
+*   **Multi-Line Text Overlay:** Add 3D-stamped names, dates, or logos. Supports vertical stacking and auto-centering.
+*   **Posterize Image Tool:** Simplify complex photos into distinct color bands (2-8 levels) to create cleaner, more artistic prints.
+*   **Vibrant Mode (Force Solid):** A surgical physics mode that ensures colors stay opaque and vibrant by guaranteeing a minimum 5-layer floor.
+
+---
+
+## 🔬 LumaMeter v3.0 Hardware Integration
+The LumaLayer ecosystem includes the **LumaMeter**, an open-source hardware device for measuring the exact Transmissive Distance (TD) of your filaments.
+
+*   📶 **WiFi Connection:** Link your LumaMeter wirelessly via Thierry’s Precision Firmware.
+*   ⚡ **Instant Mapping:** Scan your filament and watch the TD and Hex values update in your software live.
+*   🪄 **Calibration Wizard:** Software-side 5-point calibration to ensure perfect color accuracy.
+*   [**Build your own LumaMeter (Guide)**](https://github.com/RonenGru/LumaLayer/wiki/LumaMeter%E2%80%90Build%E2%80%90Guide) | [**Flash Firmware (Web Installer)**](https://ronengru.github.io/LumaLayer/flash.html)
 
 ---
 
 ## 🎨 The Digital Cookie Cutter (Shaping Engine)
-*Exclusive to LumaLayer Pro*
-
-The headline feature of v1.1 is the ability to physically "cut" your 3D prints into specific shapes. No more rectangular blocks—now your prints can take any form.
-
-*   **Interactive Shape Library:** Use the new dropdown menu to instantly clip your image into **Circles, Ovals, Stars, Hearts, Squares,** or **Rounded Rectangles**.
-*   **Precision Composing:** New sliders for **Mask Scale**, **Horizontal Position**, and **Vertical Position** allow you to frame your subject perfectly within the chosen shape.
-*   **Keychain Loop Generator:** A one-click physical mounting loop can be added to the top of any shape. This loop is mathematically integrated into the 3D mesh for maximum strength.
-*   **Procedural Raised Borders:** Add a solid physical rim around your shapes with adjustable **Border Width**. This gives your prints a clean, finished "merchandise" look.
-*   **Custom Mask Import:** Load any transparent **.PNG** file to use as a custom 3D stencil. If you can draw it, LumaLayer can print it.
+Break free from rectangular plates. Crop your art into **Circles, Ovals, Stars, Hearts, Squares,** or **Rounded Rectangles**.
+*   **Keychain Loop Generator:** One-click physical mounting loops integrated into the 3D mesh.
+*   **Raised Borders:** Procedurally generated 3D rims for a high-end "merchandise" look.
+*   **Custom Mask Import:** Load any .PNG to use as a custom 3D stencil.
 
 ---
 
-## 🔬 LumaMeter 2.0 Integration
-We have moved the "intelligence" of the LumaMeter from the hardware firmware to the LumaLayer software, resulting in a massive increase in color accuracy.
+## 📝 Project Tracker & Patch Notes
 
-*   **5-Point Calibration Wizard:** A guided setup process that teaches LumaLayer the specific spectral fingerprint of your device's LED. Calibrates for White, Black, Red, Green, and Blue.
-*   **Smart Enrollment (Train This Color):** Users can now "Enroll" specific filament brands (e.g., "Esun Bronze"). The software takes a snapshot of the sensor data and links it to a custom visual color and TD value.
-*   **Profile Manager:** A dedicated window to manage your trained filament signatures. Delete old entries or reset your base calibration with one click.
-*   **Hybrid Sync:** The LumaMeter now updates physical **TD values** live while allowing you to "lock" manual artistic colors if the sensor's raw data doesn't match your creative vision.
+### ✅ v1.2 GOLD MASTER (Current Release)
+*   [x] **LumaPuzzle:** Procedural Jigsaw generator with adjustable tolerances.
+*   [x] **LumaBox:** Sliding-lid packaging generator.
+*   [x] **Multi-Line Text:** Textbox integration with vertical stacking logic.
+*   [x] **Slicer-Sync Physics:** Implemented +0.001mm geometry logic for 0.08mm layer height reliability.
+*   [x] **Lanczos Overshoot Fix:** Eradicated microscopic Z-spikes using array clipping.
+*   [x] **Total Persistence:** .lula files now save/restore 100% of UI variables and processed images.
 
----
-
-## 👁️ High-Fidelity Simulation
-The simulation window has been rebuilt to provide an honest "What You See Is What You Get" (WYSIWYG) experience.
-
-*   **Realistic (Final) Mode:** A new rendering engine using **Exponential Beer-Lambert math**. It accurately simulates how light passes through specific TD values and reveals 0.08mm layer transitions.
-*   **Slicer-Sync Precision:** The simulation math is now perfectly aligned with the STL exporter. No more "Missing Layers" or height discrepancies.
-*   **Lighting & Contrast Sliders:** New **Brightness** and **Contrast** controls allow you to tune the on-screen preview to match your monitor's gamma or your intended physical display environment.
-*   **Subsurface Scattering:** Realistic mode now includes a "Softness" pass that mimics the way light naturally diffuses through real plastic.
+### ✅ v1.1 THE SHAPING UPDATE
+*   [x] **The Cookie Cutter:** Preset shapes and Keychain Loop generator.
+*   [x] **LumaMeter 2.0:** KNN spectrography logic and Calibration Wizard.
+*   [x] **High-DPI Support:** 4K monitor scaling and pixel-perfect coordinate mapping.
 
 ---
 
-## 🛠️ Performance & Stability
-*   **Slicer-Compatible Meshes:** Implemented vertex-snapping and "Despeckling" (Island removal) to eliminate "Floating Region" errors in Bambu Studio and OrcaSlicer.
-*   **Float-Point Precision:** Improved rounding logic ensures the physical STL height matches the LumaLayer Recipe exactly to the micron.
-*   **UI Polish:** Dynamic help labels now explain each simulation mode in real-time as you switch between them.
+## 🚀 Future Roadmap (v1.3 & Beyond)
+LumaLayer is constantly evolving. Here is what we are currently researching and developing for future updates:
+
+- **🖼️ Mural Studio:** A large-format engine to break massive paintings into interlocking tiles that fit any 3D printer bed.
+- **🍎 Mac/Linux Support:** Finalizing cross-platform dependencies for a non-Windows release.
+- **⚡ ONNX AI Integration:** Transitioning to modern GPU-accelerated AI styles for near-instant processing.
+- **📐 Vector Perimeter Smoothing:** Procedural path simplification to eliminate "staircase" edges on high-resolution prints.
 
 ---
 
-# 📝 LumaLayer Project Tracker
+## 🛠️ Stability & Performance
+LumaLayer is built for reliability. Our recent "Gold Master" hardening included:
 
-### 🚨 IMMEDIATE FIXES (Target: v1.0.2 Patch)
-*Focus: Critical usability bugs and UI scaling.*
-
-*   [x] **High-DPI / 4K Scaling:**
-    *   *Issue:* UI is tiny on 4K screens; Mouse clicks drift on laptops (125% scale).
-    *   *Fix:* Implemented `SetProcessDpiAwareness(2)` + Manual "View -> Zoom" Menu (100% - 200%).
-*   [x] **Layer Sorting Logic:**
-    *   *Report:* Zantium reported that moving layers Up/Down in the UI does not update the Simulation order.
-    *   *Task:* Check `move_layer` function to ensure it triggers a full stack rebuild.
-*   [x] **TD Value Save Bug:**
-    *   *Report:* TD values sometimes get mixed up or don't save correctly when adding multiple custom filaments.
-    *   *Task:* Audit the `save_to_lib` and `load_from_lib` functions.
-*   [x] **Magic Lift UX:**
-    *   *Issue:* Turning off the "Lift" toggle disables the effect. Users want to hide the Green Mask but keep the 3D Lift active.
-    *   *Task:* Separate "Show Mask" (Visual) from "Enable Lift" (Physics).
-
-# 📝 LumaLayer Project Tracker (v1.1 Dev Update)
-
-### ✅ COMPLETED (Target: v1.1 - The Product Update)
-*Focus: Turning Art into Physical Products & Hardware Precision.*
-
-*   [x] **The Digital Cookie Cutter (Shaping Engine):**
-    *   *Feature:* STL Exporter now respects transparency and "clips" the mesh.
-    *   *Wall Builder:* Implemented a robust loop to generate vertical side-walls for cutouts.
-    *   *interactive UI:* Added sliders for Scale, Horizontal Position, and Vertical Position.
-    *   *Shape Library:* Built-in Circle, Oval, Square, Rounded Rect, Star, and Heart masks.
-*   [x] **Keychain Loop Generator:**
-    *   *Feature:* One-click checkbox to add a physical mounting loop to any shaped print.
-    [x] **Mask "Plastic" Preview:** Ensured the keychain loop is clearly visible in the UI by using a grey "plastic" filler for the mask areas.
-*   [x] **LumaMeter Calibration Wizard:**
-    *   *Issue:* Solved the "Cool White LED" color bias using software.
-    *   *Workflow:* Built a 5-point Wizard (White, Black, Red, Green, Blue) to create a custom user profile.
-    *   *Logic:* Implemented KNN (K-Nearest Neighbors) math to identify colors based on the user's specific sensor fingerprint.
-*   [x] **"Train This Color" Logic:**
-    *   *Feature:* Users can "teach" the meter exotic filaments (Bronze, Gold, Silk) and save them to the permanent profile.
-*   [x] **Hybrid LumaMeter Sync:**
-    *   *Fix:* Prevented LumaMeter from overwriting manual artistic color choices while still allowing Live TD physics updates.
-*   [x] **TD Slider Label Fix:** Ensured the TD value is visible in the library manager.
-*   [x] **Manual Profile Management:** Add a button to "Reset Calibration" or delete specific trained colors without editing JSON.
+- **Full 4K/High-DPI Support:** Native scaling for ultra-high resolution monitors and laptops.
+- **Slicer-Sync Precision:** Vertex-snapping and rounding logic that eliminates "Floating Region" errors in Bambu Studio and OrcaSlicer.
+- **Pixel-Perfect Input:** Rebuilt coordinate mapping ensures mouse clicks and X-Ray hovers are accurate regardless of Windows UI scaling.
+- **Project Persistence:** Robust `.lula` architecture that preserves your entire creative state between sessions.
 
 ---
 
-### 🚀 FEATURE ROADMAP (v1.2 & Beyond)
-*Focus: Ecosystem expansion and professional product finishes.*
+## 📥 Get Started
+- **Download Pro/Free:** [LumaLayer Ko-Fi Shop](https://ko-fi.com/createwithtech)
+- **User Manual:** [Official Wiki](https://github.com/RonenGru/LumaLayer/wiki)
+- **Video Tutorials:** [CreateWithTech on YouTube](https://www.youtube.com/@CreatewithTech)
+- **Community:** [Join our Discord](https://discord.gg/RNgHYxhQff)
 
-*   [ ] **Library Import:**
-    *   *Task:* Write a parser for standard CSV filament lists (3D Filament Profile Database/Spreadsheets).
-*   [ ] **AI Engine Upgrade:**
-    *   *Task:* Transition from Torch (`.t7`) to ONNX (`.onnx`) for modern GPU support.
-*   [ ] **Mac/Linux Port:**
-    *   *Task:* Finalize Python cross-platform dependencies for a non-Windows release.
-*   [ ] **Auto-Stack (From Guide):**
-    *   *Task:* Automatically generate a 5-layer stack based on the "Guide" analysis.
-*   [ ] **The "Scale to Content" Engine:**
-    *   *Task:* Implement "Alpha-Cropping" logic so "Target Width" refers to the actual printed plastic, ignoring transparent empty space in the PNG file.
-*   [ ] **The "Silent Edge" Vectorizer:**
-    *   *Task:* Move from pixel-perfect masking to Vector-Simplified perimeters to eliminate jagged "staircase" edges and make the printer virtually silent.
-*   [ ] **The LumaText Engine:**
-    *   *Task:* Add a procedural text layer for keychains and badges (names, dates, or messages) using the "Raised Border" high-Z math.
-*   [ ] **The "LumaPuzzle" Procedural Engine:**
-    *   *Task:* Break images into random, interlocking puzzle pieces using Bezier-curve tabs with built-in "Slicer Gaps" (0.15mm - 0.25mm) for a perfect friction fit.
-
----
-
-## 🛠️ v1.0.2 Patch Notes (Jan 22, 2026)
-
-This update addresses critical feedback from the launch and improves the experience for 4K and High-DPI users.
-
-### 🔍 UI & Scaling
-*   **4K Support:** Added a manual **View -> Zoom** menu. Users on high-resolution monitors can now scale the UI from 100% up to 200% for readability.
-*   **Mouse Accuracy:** Implemented high-precision coordinate mapping. Clicks and X-Ray hovers are now pixel-perfect across all Windows scaling levels (100%, 125%, 150%, etc.).
-
-### 🥞 Filament Stack & Workflow
-*   **Smart Sorting:** Added a **Sort ↕** button to the stack. Instantly reorder your UI list to match the physical printing order (Base to Top).
-*   **Magic Lift UX:** Separated mask visibility from the physics engine. You can now hide the "Green Mask" to see your art clearly while keeping the 3D lift effect active.
-*   **New Project Button:** Added a one-click **"New Project / Clear"** button to reset the stack and settings instantly.
-
-### 💾 Library & Stability
-*   **Auto-Custom Detection:** The software now automatically detects when a preset is modified and switches the label to "Custom" to prevent accidental overwrites.
-*   **Smart Save Dialog:** The Save Filament window now pre-fills with the existing name for faster editing.
-*   **Installer Polish:** Added a custom Uninstaller Icon and refined the installation folder to remove redundant files.
+*Created by Ronen (CreateWithTech) | © 2026 All Rights Reserved*
