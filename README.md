@@ -4,24 +4,35 @@ LumaLayer is a professional physics-based engine for creating 3D filament painti
 
 ---
 
-## 🚀 NEW: LumaLayer v1.2 — The "Gold Master" Release
-The **v1.2 "Merchandise Factory"** update transforms LumaLayer from an art tool into a full-scale product design studio. Create interlocking products with zero CAD experience.
+## 🚀 NEW: LumaLayer v1.5 — The "Multi-Material & Dither" Release
+The **v1.3 "Multi-Material"** update transforms LumaLayer into a professional multi-color dither workspace. Create dithered, multi-material photo paintings with zero CAD experience.
 
-### 🧩 The Jigsaw Factory
+### 🏁 LumaMix Studio (Dithering & Color Pop)
+*Exclusive to LumaLayer Pro*
+*   **Dither Engines:** Generate high-frequency photographic dithered assemblies using Floyd-Steinberg or organic Riemersma space-filling Hilbert curve algorithms.
+*   **Independent Pop Color Boosts:** Brighten and saturate specific color regions independently. Boosting a layer's dither density allows you to "punch up" background colors in the slicer [1].
+*   **Shadow Nuance (Gamma Curve):** Adjust the non-linear Gamma curve, Contrast, and Brightness in real-time. Gamma allows you to control how quickly dither dots fade into the dark base plate, keeping details visible without washing out highlights.
+
+### 🧩 The Jigsaw Factory & Packaging
 *Exclusive to LumaLayer Pro*
 *   **Procedural Puzzles:** Instantly convert any image into a real, interlocking jigsaw puzzle.
-*   **Adjustable "Snap-Fit":** Built-in tolerance sliders (0.15mm - 0.30mm) ensure your puzzle pieces fit perfectly regardless of your printer's calibration.
-*   **Custom Grid Sizes:** Generate anything from a simple 4-piece kid's puzzle to a complex 100-piece challenge.
+*   **Adjustable "Snap-Fit":** Built-in tolerance sliders (0.05mm - 0.40mm) ensure your puzzle pieces fit together perfectly regardless of your printer's calibration.
+*   **Assembly Mats & LumaBox:** Generate custom-fitted Assembly Mats (Inlay or Border modes) and automatic, sliding-lid LumaBox packaging. Uses 3-sided symmetrical rail math for a smooth, professional slide-feel.
 
-### 📦 LumaBox Generator
+### 🗺️ LumaMural Tiling (Large-Format Prints)
 *Exclusive to LumaLayer Pro*
-*   **Automated Packaging:** Don't just print art; create a product. Automatically generate a custom-fitted, sliding-lid gift box for your puzzles or paintings.
-*   **Mechanical Precision:** Uses 3-sided symmetrical rail math for a smooth, professional slide-feel.
+*   **Modular Grid Slicing:** Print massive, wall-sized creations by slicing your designs into a modular tile grid.
+*   **Beveled Joint Math:** Automatically applies 2D beveled joint slopes to the edges of each tile. This ensures that dither patterns and solid features fade down cleanly at the joints, guaranteeing tight, seamless physical assembly.
 
-### 🔠 LumaText Engine & Posterization
+### 🔡 Personalization, Shaping & Borders
 *   **Multi-Line Text Overlay:** Add 3D-stamped names, dates, or logos. Supports vertical stacking and auto-centering.
-*   **Posterize Image Tool:** Simplify complex photos into distinct color bands (2-8 levels) to create cleaner, more artistic prints.
-*   **Vibrant Mode (Force Solid):** A surgical physics mode that ensures colors stay opaque and vibrant by guaranteeing a minimum 5-layer floor.
+*   **The Digital Cookie Cutter:** Crop your art into **Circles, Ovals, Stars, Hearts, Squares,** or **Rounded Rectangles**. One-click keychain loop generator and raised outer borders are fully supported.
+*   **Dilation Outline Buffering:** Automatically applies a 1-pixel dilation safety buffer (via OpenCV) around your text and outer borders. This prevents dither dots from printing inside letter notches (e.g., the letter "V") or touching your text walls, keeping sliced text razor-sharp [1].
+
+### 🧱 Flat Art Studio
+*Exclusive to LumaLayer Pro*
+*   **Vector Assembly Exporter:** Turn logos, signs, and vectors into multi-part STL/3MF assemblies without the complexity of traditional CAD software.
+*   **Edge-Preserving Cartoonizer:** Features a built-in preprocessor combining Bilateral Filtering and Posterization. Easily convert complex, textured photographs into clean, solid, flat-color segments for vector-style 3D printing [2].
 
 ---
 
@@ -35,35 +46,32 @@ The LumaLayer ecosystem includes the **LumaMeter**, an open-source hardware devi
 
 ---
 
-## 🎨 The Digital Cookie Cutter (Shaping Engine)
-Break free from rectangular plates. Crop your art into **Circles, Ovals, Stars, Hearts, Squares,** or **Rounded Rectangles**.
-*   **Keychain Loop Generator:** One-click physical mounting loops integrated into the 3D mesh.
-*   **Raised Borders:** Procedurally generated 3D rims for a high-end "merchandise" look.
-*   **Custom Mask Import:** Load any .PNG to use as a custom 3D stencil.
-
----
-
 ## 📝 Project Tracker & Patch Notes
 
-### ✅ v1.2 GOLD MASTER (Current Release)
+### ✅ v1.5 MULTI-MATERIAL DITHER (Current Release)
+*   [x] **LumaMix Studio:** Floyd-Steinberg and Riemersma dither engines with real-time preview and export.
+*   [x] **Independent Color Boosts:** Dynamic, mask-specific dither density boosting [1].
+*   [x] **LumaMural Tiling:** Multi-part large-format slicing with automatic beveled joint generation.
+*   [x] **Edge-Preserving Cartoonizer:** Bilateral + Posterization preprocessor inside Flat Art Studio [2].
+*   [x] **Standard-Compliant 3MF Assembly:** Standard `<components>` packaging that groups sub-meshes relative to a shared `(0,0,0)` origin, completely resolving "floating region" and "empty initial layer" errors [1].
+*   [x] **Outline Buffering:** Prevent dither dots from bleeding into text and border perimeters [1].
+*   [x] **Full-State Saving:** Zipped `.lula` project format now losslessly compresses and saves mask layer arrays as binary PNGs alongside all LumaMix and Flat Art variables [1].
+
+### ✅ v1.2 GOLD MASTER
 *   [x] **LumaPuzzle:** Procedural Jigsaw generator with adjustable tolerances.
 *   [x] **LumaBox:** Sliding-lid packaging generator.
 *   [x] **Multi-Line Text:** Textbox integration with vertical stacking logic.
 *   [x] **Slicer-Sync Physics:** Implemented +0.001mm geometry logic for 0.08mm layer height reliability.
-*   [x] **Lanczos Overshoot Fix:** Eradicated microscopic Z-spikes using array clipping.
-*   [x] **Total Persistence:** .lula files now save/restore 100% of UI variables and processed images.
 
 ### ✅ v1.1 THE SHAPING UPDATE
 *   [x] **The Cookie Cutter:** Preset shapes and Keychain Loop generator.
 *   [x] **LumaMeter 2.0:** KNN spectrography logic and Calibration Wizard.
-*   [x] **High-DPI Support:** 4K monitor scaling and pixel-perfect coordinate mapping.
 
 ---
 
-## 🚀 Future Roadmap (v1.3 & Beyond)
+## 🚀 Future Roadmap (v2.0 & Beyond)
 LumaLayer is constantly evolving. Here is what we are currently researching and developing for future updates:
 
-- **🖼️ Mural Studio:** A large-format engine to break massive paintings into interlocking tiles that fit any 3D printer bed.
 - **🍎 Mac/Linux Support:** Finalizing cross-platform dependencies for a non-Windows release.
 - **⚡ ONNX AI Integration:** Transitioning to modern GPU-accelerated AI styles for near-instant processing.
 - **📐 Vector Perimeter Smoothing:** Procedural path simplification to eliminate "staircase" edges on high-resolution prints.
@@ -71,12 +79,11 @@ LumaLayer is constantly evolving. Here is what we are currently researching and 
 ---
 
 ## 🛠️ Stability & Performance
-LumaLayer is built for reliability. Our recent "Gold Master" hardening included:
+LumaLayer is built for reliability. Our recent "Multi-Material" hardening included:
 
-- **Full 4K/High-DPI Support:** Native scaling for ultra-high resolution monitors and laptops.
-- **Slicer-Sync Precision:** Vertex-snapping and rounding logic that eliminates "Floating Region" errors in Bambu Studio and OrcaSlicer.
-- **Pixel-Perfect Input:** Rebuilt coordinate mapping ensures mouse clicks and X-Ray hovers are accurate regardless of Windows UI scaling.
-- **Project Persistence:** Robust `.lula` architecture that preserves your entire creative state between sessions.
+- **Parent-State Persistence:** Settings for LumaMix and Flat Art Studio are managed directly on the parent window, keeping your sliders in sync even if the sub-windows are closed during session saves.
+- **DPI-Aware Layouts:** Unified horizontal layouts that dynamically center and size dither previews to prevent aspect-ratio stretching and border-cropping on narrow screens [1].
+- **Slicer-Sync Precision:** Standard-compliant XML assembly packaging that allows multi-part 3MF files to load cleanly on unmodified, official releases of Bambu Studio and OrcaSlicer [1].
 
 ---
 
