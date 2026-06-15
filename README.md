@@ -25,6 +25,7 @@ The **v1.5 "Multi-Material"** update transforms LumaLayer into a professional mu
 *   **Beveled Joint Math:** Automatically applies 2D beveled joint slopes to the edges of each tile. This ensures that dither patterns and solid features fade down cleanly at the joints, guaranteeing tight, seamless physical assembly.
 
 ### 🔡 Personalization, Shaping & Borders
+*Exclusive to LumaLayer Pro*
 *   **Multi-Line Text Overlay:** Add 3D-stamped names, dates, or logos. Supports vertical stacking and auto-centering.
 *   **The Digital Cookie Cutter:** Crop your art into **Circles, Ovals, Stars, Hearts, Squares,** or **Rounded Rectangles**. One-click keychain loop generator and raised outer borders are fully supported.
 *   **Dilation Outline Buffering:** Automatically applies a 1-pixel dilation safety buffer (via OpenCV) around your text and outer borders. This prevents dither dots from printing inside letter notches (e.g., the letter "V") or touching your text walls, keeping sliced text razor-sharp [1].
