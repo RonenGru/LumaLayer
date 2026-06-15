@@ -5,7 +5,7 @@ LumaLayer is a professional physics-based engine for creating 3D filament painti
 ---
 
 ## 🚀 NEW: LumaLayer v1.5 — The "Multi-Material & Dither" Release
-The **v1.3 "Multi-Material"** update transforms LumaLayer into a professional multi-color dither workspace. Create dithered, multi-material photo paintings with zero CAD experience.
+The **v1.5 "Multi-Material"** update transforms LumaLayer into a professional multi-color dither workspace. Create dithered, multi-material photo paintings with zero CAD experience.
 
 ### 🏁 LumaMix Studio (Dithering & Color Pop)
 *Exclusive to LumaLayer Pro*
